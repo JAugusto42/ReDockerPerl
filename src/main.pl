@@ -2,12 +2,11 @@
 use strict;
 use warnings FATAL => 'all';
 
-# versão 3.1415926
-# coder: José Augusto a.k.a. $retr0
-# use perl script.pl ou adicione na variavel de ambiente(recomendado) =D
+# versão 3.14159265
+# coder: José Augusto a.k.a. $whoami
 
 sub main {
-
+# usar here-doc
     printf "\nSelecione a opção:\n
        |1| - Remover todos os containers que não estão rodando.
        |2| - Remover todos os containers incluindo os que estão rodando.
