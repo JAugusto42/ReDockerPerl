@@ -9,15 +9,16 @@ use warnings FATAL => 'all';
 sub main {
 
     my $tela = << 'fim';
-       "\nSelecione a opção:\n
-       |1| - Remover todos os containers que não estão rodando.
-       |2| - Remover todos os containers incluindo os que estão rodando.
-       |3| - Remover todas as imagens (menos as que estão em uso).
-       |4| - Remover todas as imagens incluindo as que estão em uso.
-       |5| - Remover todas as imagens com a tag <none>.
-       |6| - Ver imagens.
-       |0| - SAIR.\n";
-
+       _____________________
+       |Selecione a opção: |_______________________________________________
+       |1| - Remover todos os containers que não estão rodando.           |
+       |2| - Remover todos os containers incluindo os que estão rodando.  |
+       |3| - Remover todas as imagens (menos as que estão em uso).        |
+       |4| - Remover todas as imagens incluindo as que estão em uso.      |
+       |5| - Remover todas as imagens com a tag <none>.                   |
+       |6| - Ver imagens.                                                 |
+       |0| - SAIR.                                                        |
+       |__________________________________________________________________|
 fim
     print $tela;
 
