@@ -5,9 +5,11 @@ use warnings FATAL => 'all';
 # versão 3.14159265
 # coder: José Augusto a.k.a. $whoami
 
+
 sub main {
-# usar here-doc
-    printf "\nSelecione a opção:\n
+
+    my $tela = << 'fim';
+       "\nSelecione a opção:\n
        |1| - Remover todos os containers que não estão rodando.
        |2| - Remover todos os containers incluindo os que estão rodando.
        |3| - Remover todas as imagens (menos as que estão em uso).
@@ -15,6 +17,9 @@ sub main {
        |5| - Remover todas as imagens com a tag <none>.
        |6| - Ver imagens.
        |0| - SAIR.\n";
+
+fim
+    print $tela;
 
     my $entrada = <>;
 
